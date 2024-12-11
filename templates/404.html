@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Error Page</title>
-</head>
-<body>
-<p>Something went wrong.. You entered incorrect URL</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    <p>Something went wrong... invalid url entered....</p>
+{% endblock %}

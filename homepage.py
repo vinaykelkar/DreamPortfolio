@@ -8,12 +8,19 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/user/<name>')
-def user(name):
-    return render_template("user.html",user_name=name)
+@app.route('/mutual_funds')
+def mutual_funds():
+    return render_template("mutual_funds.html")
+
+@app.route('/stocks')
+def stocks():
+    return render_template("stocks.html")
+
+@app.route('/crypto')
+def crypto():
+    return render_template("crypto.html")
 
 #creating custom error pages
-
 #Invalid url
 @app.errorhandler(404)
 def error_page(e):
