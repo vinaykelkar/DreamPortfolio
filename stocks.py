@@ -11,5 +11,5 @@ print(data)
 # stock = yf.Ticker(symbol)
 # info = stock.info
 
-high_low_52w = capital_market.week_52_high_low_report(trade_date='11-12-2024',symbol='SBIN')
+high_low_52w = capital_market.week_52_high_low_report(trade_date='19-12-2024',symbol='SBIN.NS')
 print(high_low_52w)
